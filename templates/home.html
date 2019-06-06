@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+{%block content %}
+{% load static %}
+{% load thumbnail %}
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+     <meta charset="utf-8">
+         <meta http-equiv ="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+ <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <title>{%block title %}KitchenDiary{%endblock%}</title>
+<style>
+  .containers{
+  	width:280px;
+  	height:360px;
+  	background:url({% static 'img/new.png' %});
+  	position:relative;
+  	left:170px;
+  	top:135px;
+  	transform: translate(-50%,-50%);
+  	perspective:1000px;
+  	}
+  	.cover {
+  		width:230px;
+  		height: 100%;
+  		position: absolute;
+  		left:35px;
+  		background-color: #345b8c;
+  		transform: rotateY(-5deg);
+  		transform-style : preserve-3d;
+  		transform-origin: left;
+  		transition: all .5s ease-in;
+
+  	}
+
+  .containers:hover .cover{
+  transform: rotateY(-180deg);
+
+  }
+
+  figure {
+  margin:0;
+  display:block;
+  position:absolute;
+  width:100%;
+  height:100%;
+  backface-visibility:hidden;
+  }
+
+  figure.front
+  {
+  	background:url({% static 'img/ign.png' %});
+  }
+  figure.back {
+  	background:;
+  	transform: rotateY(180deg);
+  }
+</style>
+</head>
+
+
+<body>
+<div class="container" style="margin-top:100px">
+    <div class="jumbotron" style="height:400px">
+
+
+        <div class="containers">
+
+
+		<div class="cover">
+
+
+		<figure class="front">
+
+
+		</figure>
+		<figure class="back">
+
+
+		</figure>
+		</div>
+    </div>
+		<div class="text">
+
+	<h4>Create a free account for accessing the <br>Indian Exclusive Recipe Book. </h4>
+  <img src="{% static 'img/ckkk.gif' %}" style="height:300px">
+	</div>
+
+
+
+    </div>
+
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 footer-navigation">
+                <h3><a href="#">Kitchen<span>Diary </span></a></h3>
+                <p class="links"><a href="#">Home</a><strong> · </strong><a href="#">Blog</a><strong> · </strong><a href="#">Idea</a><strong> · </strong><a href="#">About</a><strong> · </strong><a href="#">Faq</a><strong> · </strong><a href="#">Contact</a></p>
+                <p class="company-name">Kitchen Diary © 2019 </p>
+            </div>
+            <div class="col-md-4 col-sm-6 footer-contacts">
+                <div><span class="bg-info fa fa-map-marker footer-contacts-icon"> </span>
+                    <p><span class="new-line-span">UCER</span> Naini, Allahabad</p>
+                </div>
+                <div><i class="fa fa-phone footer-contacts-icon"></i>
+                    <p class="footer-center-info email text-left"> +91 9140910217</p>
+                </div>
+                <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                    <p> <a href="#" target="_blank">kitchendiary@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="clearfix visible-sm-block"></div>
+            <div class="col-md-4 footer-about">
+                <h4>About the company</h4>
+                <p> Kitchen diary provides methods and videos for cooking many recipies and join you with globly ,Here you can learn and explore your own video.
+                </p>
+                <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+{% endblock content%}

@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+        <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="{% static 'css/res/style.css' %}">
+      <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/untitled-5.css">
+    <title>{% block title %}kitchenDiary{% endblock %}</title>
+
+<style>
+
+
+
+</style>
+</head>
+<body>
+  <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AY82iHuT1h4?start=12" frameborder="5" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+            <div class="col-md-5">
+                <div>
+                    <ul class="nav nav-tabs">
+                        <li><a class="text-uppercase text-warning" href="#tab-1" role="tab" data-toggle="tab">Ingredients </a></li>
+                        <li><a class="text-uppercase" href="#tab-2" role="tab" data-toggle="tab">Directions </a></li>
+                        <li><a class="text-uppercase text-danger" href="#tab-3" role="tab" data-toggle="tab">Nutrition </a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" role="tabpanel" id="tab-1">
+                            <p class="text-warning">Oil - 1 & 1/2 tbsp
+<br>Onion - 1 small
+<br>Yellow capsicum
+<br>Green Capsicum
+<br>Carrot - 1 small
+<br>Cabbage - 1/2 cup
+<br>Bean sprouts - 1/2 cup
+<br>Soya sauce - 1 tbsp
+<br>Vinegar - 1 tbsp
+<br>Schezwan sauce - 2 / 3 tbsp
+<br>Salt to taste
+<br>Spring onion and bean sprouts for garnishing
+
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-2">
+                            <p class="text-success">- Heat oil in a wok/pan and saute ginger and garlic paste
+<br>- Add onions, green capsicum, yellow capsicum, cabbage, carrots, bean sprouts and cook them on high flame around 2 mins.
+<br>- Add soya sauce, vinegar, schezwan sauce and mix well everything
+<br>- Add the noodles, salt and give a good mix.
+<br>- Sprinkle some spring onions and mix it
+<br>- Serve the noodles hot after garnishing it with some more spring onions and beans sprouts.
+</p>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-3">
+                            <p class="text-danger"> 320 calories<br>15g fat<br> 2g fiber<br> 2g protein<br>47g carbs<br> and 29g sugar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="media">
+                    <div class="media-left">
+                        <a><img></a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="text-danger">Schezwan Noodles Recipe </h4>
+                        <p class="text-primary">Learn how to make Schezwan Noodles - Easy to Make Quick Homemade Chinese Noodles Recipe By Ruchi Bharani on Rajshri Food.
+
+<br>Indulge yourself in spicy and tasty schezwan noodles. Chef Ruchi Bharani teaches how to cook super easy and quick homemade noodles recipe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+   <script></script>
+
+</html>
+{% endblock content %}

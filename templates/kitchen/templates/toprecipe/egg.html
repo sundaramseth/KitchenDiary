@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+        <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{STATIC_URL }}style.css"/>
+      <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/untitled-5.css">
+    <title>{% block title %}kitchenDiary{% endblock %}</title>
+
+<style>
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus,
+    .nav-tabs > li.active > a:hover
+    {
+    color:#555;
+    backgroung-color:#ddd;
+    border:1px solid #ddd;
+    }
+
+.nav >li >a:focus, .nav > li>a:hover{
+    background-color:#eee;
+    }
+    .nav > li >a {
+    position: relative;
+    display:block;
+    padding:10px 15px;
+    }
+    .my_class_name{
+}
+
+.my_class_name{
+  margin:0 auto;
+  border:10px outset #ddd;
+}
+
+.my_class_name{
+}
+
+.bg-info{
+  background-color:#d75e5e;
+}
+
+body{
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:16px;
+  line-height:1.42857143;
+  color:#333;
+  background-color:black;
+}
+
+
+.container
+{
+margin-top:100px;
+}
+
+
+</style>
+</head>
+<body>
+  <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+ <iframe width="560" height="350" src="https://www.youtube.com/embed/W3bD3eoqjHs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+            <div class="col-md-5">
+                <div>
+                    <ul class="nav nav-tabs">
+                        <li><a class="text-uppercase text-warning" href="#tab-1" role="tab" data-toggle="tab">Ingredients </a></li>
+                        <li><a class="text-uppercase" href="#tab-2" role="tab" data-toggle="tab">Directions </a></li>
+                        <li><a class="text-uppercase text-danger" href="#tab-3" role="tab" data-toggle="tab">Nutrition </a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" role="tabpanel" id="tab-1">
+                            <p class="text-warning">6 large hard-boiled and peeled eggs.<br>
+<br>1/4 cup mayonnaise.
+<br>1/8 teaspoon salt.
+<br>1/8 teaspoon pepper.
+
+
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-2">
+                            <p class="text-success">Slice the eggs in half lengthwise,
+                                <br> removing yolks to a medium bowl, <br>and placing the whites on a serving platter. <br>Mash the yolks into a fine crumble using a fork.<br>Add mayonnaise, vinegar, mustard, salt, and pepper, and mix well.<br>Evenly disperse heaping teaspoons of the yolk mixture into the egg whites.
+</p>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-3">
+                            <p class="text-danger">Calories140;<br> Calories from Fat, 110;<br> Total Fat, 12g;<br> Saturated Fat 2.5g; <br>Trans Fat, 0g;<br> Cholesterol, 215mg; <br>Sodium, 170mg;<br> Total Carbohydrate 0g; <br>Dietary Fiber, 0g; <br>Sugars, 0g,<br> Protein, 6g.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="media">
+                    <div class="media-left">
+                        <a><img></a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="text-danger">Deviled Eggs Recipe</h4>
+                        <p class="text-primary">Learn how to make Deviled Eggs at home with Masterchef India "Shipra Khanna" only on Shipra's Kitchen  </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+   <script></script>
+
+</html>
+{% endblock content %}

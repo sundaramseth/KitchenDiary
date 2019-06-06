@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+        <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{STATIC_URL }}style.css"/>
+      <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/untitled-5.css">
+    <title>{% block title %}kitchenDiary{% endblock %}</title>
+
+<style>
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus,
+    .nav-tabs > li.active > a:hover
+    {
+    color:#555;
+    backgroung-color:#ddd;
+    border:1px solid #ddd;
+    }
+
+.nav >li >a:focus, .nav > li>a:hover{
+    background-color:#eee;
+    }
+    .nav > li >a {
+    position: relative;
+    display:block;
+    padding:10px 15px;
+    }
+    .my_class_name{
+}
+
+.my_class_name{
+  margin:0 auto;
+  border:10px outset #ddd;
+}
+
+.my_class_name{
+}
+
+.bg-info{
+  background-color:#d75e5e;
+}
+
+body{
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:16px;
+  line-height:1.42857143;
+  color:#333;
+  background-color:black;
+}
+
+
+.container
+{
+margin-top:100px;
+}
+
+
+</style>
+</head>
+<body>
+  <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JVzoK8jSQnQ?start=6" frameborder="5" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+            <div class="col-md-5">
+                <div>
+                    <ul class="nav nav-tabs">
+                        <li><a class="text-uppercase text-warning" href="#tab-1" role="tab" data-toggle="tab">Ingredients </a></li>
+                        <li><a class="text-uppercase" href="#tab-2" role="tab" data-toggle="tab">Directions </a></li>
+                        <li><a class="text-uppercase text-danger" href="#tab-3" role="tab" data-toggle="tab">Nutrition </a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" role="tabpanel" id="tab-1">
+                            <p class="text-warning">250 gms chicken keema
+<br>3-4 boiled & mashed potatoes
+<br>1 tbsp chopped garlic
+<br>1-1 1/2  tbsp chopped ginger
+<br>2 chopped green chillies
+<br>3-4 crushed cloves
+<br>1 tbsp coriander powder
+<br>1 tbsp cumin powder
+<br>1/2 tbsp garam masala
+<br>feshly chopped Coriander
+<br>Salt
+<br>1 egg
+<br>Oil for shallow frying
+<br>2 cups Rice flakes
+
+
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-2">
+                            <p class="text-success">In a bowl add 250 gms chicken keema,
+ 3-4 boiled potatoes, 1 tbsp chopped ginger, 1 tbsp chopped garlic, 2 chopped green chillies, 3-4 crushed cloves, 1 tbsp coriander powder, 1 tbsp cumin powder, 1/2 tbsp garam masala, freshly chopped coriander, salt to taste, 1 egg and mix well.
+
+<br>Take a small portion of the mixture and shape it into a flat cutlet.
+
+<br>Now cover it with rice flakes and shallow fry the cutlets on both the sides till it turns golden brown.
+
+<br>Your hot and crispy Chicken Keema Cutlets are ready to be served.
+
+</p>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-3">
+                            <p class="text-danger"> 320 calories<br>15g fat<br> 2g fiber<br> 2g protein<br>47g carbs<br> and 29g sugar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="media">
+                    <div class="media-left">
+                        <a><img></a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="text-danger">Chiken Kima Cutlets</h4>
+                        <p class="text-primary">Chicken mince cooked with Indian spices, shaped into cutlets, crumbed and shallow fried..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+   <script></script>
+
+</html>
+{% endblock content %}

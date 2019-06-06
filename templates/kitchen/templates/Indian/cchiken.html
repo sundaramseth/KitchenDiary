@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+        <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="{% static 'css/res/style.css' %}">
+      <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/untitled-5.css">
+    <title>{% block title %}kitchenDiary{% endblock %}</title>
+
+<style>
+
+
+
+</style>
+</head>
+<body>
+  <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zVYa0abkdkE?start=1" frameborder="5" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+            <div class="col-md-5">
+                <div>
+                    <ul class="nav nav-tabs">
+                        <li><a class="text-uppercase text-warning" href="#tab-1" role="tab" data-toggle="tab">Ingredients </a></li>
+                        <li><a class="text-uppercase" href="#tab-2" role="tab" data-toggle="tab">Directions </a></li>
+                        <li><a class="text-uppercase text-danger" href="#tab-3" role="tab" data-toggle="tab">Nutrition </a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" role="tabpanel" id="tab-1">
+                            <p class="text-warning">
+For Marination:-
+<br>1/2 kg Chicken, Curry cut
+<br>1/2 tsp. Turmeric Powder
+<br>1 tbsp. Lemon juice
+<br>Salt as required
+
+For Seasoning:-
+<br>2 tbsp. Sesame Oil
+<br>15 nos. Shallots (sliced)
+<br>Salt as required
+<br>3 sprigs curry leaves
+
+
+
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-2">
+                            <p class="text-success">The Seasoning:-
+<br>- Heat oil in a pan and add shallots, curry leaves and saute on medium flame until shallots are golden brown.
+<br>- Now add the marinated chicken and turn the flame on high and saute for 2-3 minutes.
+<br>- Once the chicken has seared well, add the Chettinad Masala, water, salt and bring it to a boil.
+<br>- Lower the flame, cover with a lid and let it cook for 15-10 minutes.
+<br>- Garnish with coriander leaves and serve hot.
+</p>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-3">
+                            <p class="text-danger"> 320 calories<br>15g fat<br> 2g fiber<br> 2g protein<br>47g carbs<br> and 29g sugar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="media">
+                    <div class="media-left">
+                        <a><img></a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="text-danger">Chettinad Chicken</h4>
+                        <p class="text-primary">Learn How To Make Chettinad Chicken Curry Recipe, a South Indian Chicken Recipe by Chef Varun Inamdar.<br>
+                           Make this delicious and spicy Chettinad Chicken Recipe in simple, quick and easy method,<br> at your home and share your experience with us in the comments below.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+   <script></script>
+
+</html>
+{% endblock content %}

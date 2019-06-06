@@ -1,0 +1,42 @@
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover
+{
+color:#555;
+backgroung-color:#ddd;
+border:1px solid #ddd;
+}
+
+.nav >li >a:focus, .nav > li>a:hover{
+background-color:#eee;
+}
+.nav > li >a {
+position: relative;
+display:block;
+padding:10px 15px;
+}
+.my_class_name{
+}
+
+.my_class_name{
+margin:0 auto;
+border:10px outset #ddd;
+}
+
+.my_class_name{
+}
+
+.bg-info{
+background-color:#d75e5e;
+}
+
+body{
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size:16px;
+line-height:1.42857143;
+color:#333;
+background-color:black;
+}
+.container
+{
+  margin-top: 100px;
+}

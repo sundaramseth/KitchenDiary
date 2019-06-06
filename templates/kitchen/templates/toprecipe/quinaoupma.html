@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+        <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{STATIC_URL }}style.css"/>
+      <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/untitled-5.css">
+    <title>{% block title %}kitchenDiary{% endblock %}</title>
+
+<style>
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus,
+    .nav-tabs > li.active > a:hover
+    {
+    color:#555;
+    backgroung-color:#ddd;
+    border:1px solid #ddd;
+    }
+
+.nav >li >a:focus, .nav > li>a:hover{
+    background-color:#eee;
+    }
+    .nav > li >a {
+    position: relative;
+    display:block;
+    padding:10px 15px;
+    }
+    .my_class_name{
+}
+
+.my_class_name{
+  margin:0 auto;
+  border:10px outset #ddd;
+}
+
+.my_class_name{
+}
+
+.bg-info{
+  background-color:#d75e5e;
+}
+
+body{
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:16px;
+  line-height:1.42857143;
+  color:#333;
+  background-color:black;
+}
+
+
+.container
+{
+margin-top:100px;
+}
+
+
+</style>
+</head>
+<body>
+  <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+<iframe width="560" height="330" src="https://www.youtube.com/embed/YPWKMDRFRB4?start=5" frameborder="5" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+            <div class="col-md-5">
+                <div>
+                    <ul class="nav nav-tabs">
+                        <li><a class="text-uppercase text-warning" href="#tab-1" role="tab" data-toggle="tab">Ingredients </a></li>
+                        <li><a class="text-uppercase" href="#tab-2" role="tab" data-toggle="tab">Directions </a></li>
+                        <li><a class="text-uppercase text-danger" href="#tab-3" role="tab" data-toggle="tab">Nutrition </a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" role="tabpanel" id="tab-1">
+                            <p class="text-warning">1 cup quinoa<br>
+2 tablespoons oil
+<br>1/2 teaspoon mustard seeds
+<br>8-10 curry leaves
+<br>2 medium onions, chopped
+<br>1/4 teaspoon turmeric powder
+<br>2 green chillies, chopped
+<br>2 small potatoes, boiled, peeled and cut into 1 cm cubes
+<br>Salt to taste
+<br>2 tablespoons roasted and crushed peanuts
+<br>1 tablespoon chopped fresh coriander
+<br>2 tablespoons scraped fresh coconut
+
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-2">
+                            <p class="text-success">1. Rinse the quinoa well. Transfer the quinoa in a deep nonstick
+        pan. Add two cups water. Allow to boil. Cover and and cook on
+        low heat for eighteen to twenty minutes.
+<br>. Heat oil in a nonstick pan. Add the mustard seeds. Once they
+        start to splutter, add curry leaves and sauté for a few seconds.
+<br>3. Add onions and sauté till golden brown. Add turmeric powder,
+        green chillies and sauté well.
+<br>4. Add boiled potatoes and mix well. Add the cooked quinoa, salt
+        and mix well.
+<br>5. Take the pan off the heat. Transfer in a serving bowl.
+<br>6. Sprinkle roasted peanuts, coriander and coconut and serve 
+        hot.
+</p>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-3">
+                            <p class="text-danger"> 320 calories<br>15g fat<br> 2g fiber<br> 2g protein<br>47g carbs<br> and 29g sugar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="media">
+                    <div class="media-left">
+                        <a><img></a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="text-danger">Quinoa Upma</h4>
+                        <p class="text-primary">Here is a classic recipe with  a healthy twist... Watch this video to find out the recipe for Quinoa Poha. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+   <script></script>
+
+</html>
+{% endblock content %}

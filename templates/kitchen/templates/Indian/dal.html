@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+        <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="{% static 'css/res/style.css' %}">
+      <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/untitled-5.css">
+    <title>{% block title %}kitchenDiary{% endblock %}</title>
+
+<style>
+
+
+
+</style>
+</head>
+<body>
+  <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FTIjbV6yczo?start=19" frameborder="5" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+            <div class="col-md-5">
+                <div>
+                    <ul class="nav nav-tabs">
+                        <li><a class="text-uppercase text-warning" href="#tab-1" role="tab" data-toggle="tab">Ingredients </a></li>
+                        <li><a class="text-uppercase" href="#tab-2" role="tab" data-toggle="tab">Directions </a></li>
+                        <li><a class="text-uppercase text-danger" href="#tab-3" role="tab" data-toggle="tab">Nutrition </a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" role="tabpanel" id="tab-1">
+                            <p class="text-warning">Cooking Dal
+<br>- 1 cup of black gram
+<br>- Rajma ( red kidney beans )- Salt- Water
+
+Tadka
+<br>- 2 tbsp ghee
+<br>- 2 chopped onions
+<br>- 2 tbsp ginger garlic paste
+<br>- 3-4 tomato puree
+<br>- 1/2 tsp salt
+<br>- 1/2 tsp red chilli powder
+<br>- coriander leaves- water
+<br>- 2 tsp coriander powder
+<br>- 1 tsp cumin powder
+<br>- 1 tsp garam masala
+
+<br>- Butter
+<br>- 1/2 tsp red chilli powder,- Fresh Cream
+
+
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-2">
+                            <p class="text-success">- In a pressure cooker add black gram, red kidney beans, salt and water & keep it for 2-3 whistles.
+<br>- In a pan add ghee and onions and cook it until the onions turn brown.
+<br>- Add ginger garlic paste, tomato puree, salt, red chilli powder and coriander leaves.
+<br>- Check if the dal is cooked and add it to the tadka and cook it for 7-8 minutes.
+<br>- In other pan add butter, red chilli powder and pour it over dal and add coriander and fresh cream.
+<br>Dal Makhani is ready to be served!
+</p>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-3">
+                            <p class="text-danger"> 400 calories<br>2g fat<br> 10g fiber<br> 20g protein<br>47g carbs<br> and 29g sugar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="media">
+                    <div class="media-left">
+                        <a><img></a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="text-danger">Dal Makhani Recipe </h4>
+                        <p class="text-primary">Learn how to make Dal Makhani at home with chef Seema only on Swaad Anusaar.
+
+Dal Makhani is a bliss for all the vegetarians.<br>
+ It's creamy, yummy & easy to make. So with chef Seema learn to make Dal Makhani only on Swaad Anusaar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+   <script></script>
+
+</html>
+{% endblock content %}

@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+        <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{STATIC_URL }}style.css"/>
+      <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/untitled-5.css">
+    <title>{% block title %}kitchenDiary{% endblock %}</title>
+
+<style>
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus,
+    .nav-tabs > li.active > a:hover
+    {
+    color:#555;
+    backgroung-color:#ddd;
+    border:1px solid #ddd;
+    }
+
+.nav >li >a:focus, .nav > li>a:hover{
+    background-color:#eee;
+    }
+    .nav > li >a {
+    position: relative;
+    display:block;
+    padding:10px 15px;
+    }
+    .my_class_name{
+}
+
+.my_class_name{
+  margin:0 auto;
+  border:10px outset #ddd;
+}
+
+.my_class_name{
+}
+
+.bg-info{
+  background-color:#d75e5e;
+}
+
+body{
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:16px;
+  line-height:1.42857143;
+  color:#333;
+  background-color:black;
+}
+
+
+.container
+{
+margin-top:100px;
+}
+
+
+</style>
+</head>
+<body>
+  <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xuqohAhdh3k" frameborder="5" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+            <div class="col-md-5">
+                <div>
+                    <ul class="nav nav-tabs">
+                        <li><a class="text-uppercase text-warning" href="#tab-1" role="tab" data-toggle="tab">Ingredients </a></li>
+                        <li><a class="text-uppercase" href="#tab-2" role="tab" data-toggle="tab">Directions </a></li>
+                        <li><a class="text-uppercase text-danger" href="#tab-3" role="tab" data-toggle="tab">Nutrition </a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" role="tabpanel" id="tab-1">
+                            <p class="text-warning"> Fish 500 gms
+<br>ii. Yoghurt           4-6 tsp
+<br>iii. Lemon juice   1 tsp
+<br>iv. Ginger garlic paste 2 tsp
+<br>v. Oil            3-4 tsp
+<br>vi. Butter    3-4 ts
+<br>vii. Chat Masala   2 tsp
+<br>viii. Salt,red chili,turmeric,black
+<br>Pepper,coriander  1 tsp each
+
+
+
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-2">
+                            <p class="text-success">
+                              Dry roast and grind the fenugreek seeds, cumin seeds, fennel seeds and saunf to a fine powder. Add the fish fillets to a large bowl.
+<br>Add the fresh ground powder, pickle, lemon juice, ginger garlic paste, salt, red chilli powder, garam masala powder and yogurt.
+<br>Mix well until the fillets are evenly coated. Keep aside for 15 to 30 minutes.
+<br>Sprinkle a bit of coriander leaves and toss gently. Thread the fillets onto the skewers. Place them on a preheated grill pan over medium flame.
+<br>Grill the fish tikkas for 5 to 10 minutes on each side, turning them from time to time and frequently basting them with butter.
+<br>When the fillets are slightly charred and cooked through, remove and transfer to a serving plate.
+</p>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-3">
+                            <p class="text-danger"> 262 calories<br>10g fat<br> 2g fiber<br> 31g protein<br>12g carbs<br> and 7g sugar.<br>Iron:8,1%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="media">
+                    <div class="media-left">
+                        <a><img></a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="text-danger">Fish Tikka</h4>
+                        <p class="text-primary">Fish Tikka Masala is a very tasty and unique Fish recipe which involves three steps of frying, grinding masalas then cooking, explained here in a step by step method</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+   <script></script>
+
+</html>
+{% endblock content %}

@@ -1,0 +1,14 @@
+div.col-md-6.col-md-offset-0{
+}
+
+.container1{
+  width:200px;
+  height:150px;
+  background:url(../../assets/img/22.jpg);
+  position:relative;
+  left:-200px;
+  top:215px;
+  transform:translate(-50%,-50%);
+  perspective:1000px;
+}
+

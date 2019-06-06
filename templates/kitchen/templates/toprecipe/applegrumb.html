@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+        <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{STATIC_URL }}style.css"/>
+      <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/untitled-5.css">
+    <title>{% block title %}kitchenDiary{% endblock %}</title>
+
+<style>
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus,
+    .nav-tabs > li.active > a:hover
+    {
+    color:#555;
+    backgroung-color:#ddd;
+    border:1px solid #ddd;
+    }
+
+.nav >li >a:focus, .nav > li>a:hover{
+    background-color:#eee;
+    }
+    .nav > li >a {
+    position: relative;
+    display:block;
+    padding:10px 15px;
+    }
+    .my_class_name{
+}
+
+.my_class_name{
+  margin:0 auto;
+  border:10px outset #ddd;
+}
+
+.my_class_name{
+}
+
+.bg-info{
+  background-color:#d75e5e;
+}
+
+body{
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:16px;
+  line-height:1.42857143;
+  color:#333;
+  background-color:black;
+}
+
+
+.container
+{
+margin-top:100px;
+}
+
+
+</style>
+</head>
+<body>
+  <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/h-NAEbOcrK8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+            <div class="col-md-5">
+                <div>
+                    <ul class="nav nav-tabs">
+                        <li><a class="text-uppercase text-warning" href="#tab-1" role="tab" data-toggle="tab">Ingredients </a></li>
+                        <li><a class="text-uppercase" href="#tab-2" role="tab" data-toggle="tab">Directions </a></li>
+                        <li><a class="text-uppercase text-danger" href="#tab-3" role="tab" data-toggle="tab">Nutrition </a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" role="tabpanel" id="tab-1">
+                            <p class="text-warning">Crust<br>1/2 cup gram refined(maida)+for dusting<br>1/2 cup powderd sugar
+                                <br>Salt to taste<br>75 grams frozen butter <br>Filling <br>2 large green apples,roughly chopped
+                                    <br>1/2 cup sugar<br>1 teaspoon cinnamon <br>Milk wash<br>1 tablespoon milk<br>1/2 tablespoon castor sugar
+                                        <br>lcing sugar for dusting
+
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-2">
+                            <p class="text-success">1. To make crust dough, sift refined flour, powdered sugar, salt through a sieve in a mixing bowl. Add frozen butter, mix well.
+
+                                Add 1 tablespoon chilled water, knead into a semi-stiff dough.
+<br>2. Place dough on a cling film, seal with a wrap and refrigerate till firm.
+<br>3. Heat a non-stick pan. Add apples, sugar, mix and cook till the apples turn soft. Remove from heat and set aside.
+<br>4. Mix together cooked apples and cinnamon powder, set aside to cool at room temperature.
+<br>5. Preheat oven at 180˚C.
+<br>6. Divide the crust dough into equal portions. Dust the working-top with refined flour and roll out the crust dough into thin sheets. Roll the thin sheets using a rolling pin.
+<br>7. Line a pie dish with the rolled dough sheet.
+<br>8. Mix together apple mixture and cake crumbs in a mixing bowl, transfer to pie dish, and cover with another sheet of dough. Make a criss-cross pattern on top.
+<br>9. Milk wash with milk and castor sugar. Place the dish in the baking oven and bake for 25-30 minutes or till the crust is light golden.
+<br>10. Remove from the oven, transfer to a serving dish, dredge icing sugar on top and serve.
+</p>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-3">
+                            <p class="text-danger"> 320 calories<br>15g fat<br> 2g fiber<br> 2g protein<br>47g carbs<br> and 29g sugar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="media">
+                    <div class="media-left">
+                        <a><img></a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="text-danger">Apple Pie Grumb</h4>
+                        <p class="text-primary">Crusty outer covering stuffed with crumbly apple mixture, baked till perfection. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+   <script></script>
+
+</html>
+{% endblock content %}

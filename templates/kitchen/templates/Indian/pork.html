@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+        <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="{% static 'css/res/style.css' %}">
+      <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/untitled-5.css">
+    <title>{% block title %}kitchenDiary{% endblock %}</title>
+
+<style>
+
+
+
+</style>
+</head>
+<body>
+  <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6WoQeNGEdSg?start=12" frameborder="5" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+            <div class="col-md-5">
+                <div>
+                    <ul class="nav nav-tabs">
+                        <li><a class="text-uppercase text-warning" href="#tab-1" role="tab" data-toggle="tab">Ingredients </a></li>
+                        <li><a class="text-uppercase" href="#tab-2" role="tab" data-toggle="tab">Directions </a></li>
+                        <li><a class="text-uppercase text-danger" href="#tab-3" role="tab" data-toggle="tab">Nutrition </a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" role="tabpanel" id="tab-1">
+                            <p class="text-warning">Fish (boneless bite-sized pieces) – 300 g;<br>
+For Marination – <br>1/2 tsp salt,<br> 1 tsp turmeric powder,<br> 1 tsp red chilli powder,<br> 1/2 tsp crushed black pepper,<br>1/2tbsp ginger paste,<br> 1 tbsp garlic paste,<br> 1 tbsp lime juice/vinegar
+For Batter – 1/3 cup white flour/maida/rice powder,<br> 1 tbsp corn flour/corn starch, <br>tsp each of salt and red chilli powder,<br> water
+For the sauce –<br> 1.5 tbsp finely chopped garlic,<br> 1 tbsp finely chopped ginger, <br>1/4 cup finely chopped onion, <br>2 -3 green chillies,<br> few curry leaves, <br>1/4 tsp turmeric powder,<br> 2 tbsp red chilli sauce/1 tsp red chilli powder,<br> 1 tbsp soya sauce,<br> 1 tbsp vinegar
+
+
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-2">
+                            <p class="text-success">1. Heat ghee and oil in a pressure cooker. Add cumin seeds and let seeds change colour. Add peppercorns, cardamoms, cloves and bay leaves, mix and sauté well.
+<br>2. Add onion, mix and sauté till translucent. Add ginger-garlic paste, mix well and cook for a minute.
+<br>3. Add green chillies and mutton pieces and mix. Add tomato, mix and cook till it turns soft and pulpy.
+<br>4. Add chilli powder, coriander powder and turmeric powder and mix well. Add yogurt and mix.
+<br>5. Add salt and sufficient water and stir to mix. Add potatoes, mix, cover and pressure cook till the pressure is released 5-6 times.
+<br>6. Remove cover once pressure is reduced completely, add garam masala powder and coriander leaves, mix well and simmer for a minute.
+<br>7. Garnish with coriander sprig and serve hot.
+</p>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="tab-3">
+                            <p class="text-danger"> 320 calories<br>15g fat<br> 2g fiber<br> 2g protein<br>47g carbs<br> and 29g sugar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="media">
+                    <div class="media-left">
+                        <a><img></a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="text-danger">Smoked Pork </h4>
+                        <p class="text-primary">One of the hottest and spiciest smoked pork recipe in the world.
+<br>A flavoursome side dish where the pork is crispy on the outside and juicy inside.
+The slow cooking brings out the intense smokey flavourful from the meat and
+I am sure you will also love the fiery taste from the ghost chillies.
+ Please do try it and thanks for watching!!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+   <script></script>
+
+</html>
+{% endblock content %}
